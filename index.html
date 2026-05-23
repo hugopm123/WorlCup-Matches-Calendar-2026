@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copa Mundial de la FIFA 2026 — Calendario Oficial</title>
+  <link rel="icon" type="image/webp" href="assets/LOGO-MUNDIAL.webp">
+  <link rel="icon" type="image/jpeg" href="assets/LOGO-MUNDIAL.jpg">
+  <meta name="description"
+    content="Descarga el calendario oficial de los 104 partidos del Mundial 2026. Añádelo a tu calendario con un clic.">
+  <meta property="og:title" content="Copa Mundial de la FIFA 2026 — Calendario Oficial">
+  <meta property="og:description"
+    content="Los 104 partidos del Mundial 2026 en tu calendario. Un clic y los tienes todos.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo claro/oscuro">🌙</button>
+
+  <!-- ════════════ HERO ════════════ -->
+  <header class="hero">
+    <picture>
+      <source srcset="assets/LOGO-MUNDIAL.webp" type="image/webp">
+      <img src="assets/LOGO-MUNDIAL.jpg" alt="FIFA World Cup 2026" class="hero-logo">
+    </picture>
+    <div class="hero-badge">FIFA World Cup 2026</div>
+    <h1>Mundial 2026<br><span>Calendario Oficial</span></h1>
+    <p>Añade los 104 partidos de la Copa del Mundo a tu calendario en un solo clic. Elige tu app:</p>
+
+    <div class="cal-options">
+      <!-- Apple Calendar -->
+      <a id="webcal-link" href="#" class="cal-option">
+        <div class="cal-icon cal-icon-apple">
+          <div class="ci-top"></div>
+          <div class="ci-line"></div>
+          <div class="ci-dot"></div>
+          <span class="ci-date">26</span>
+        </div>
+        <div class="cal-option-name">Apple Calendar</div>
+        <div class="cal-option-desc">Suscripción automática en iOS y macOS</div>
+      </a>
+
+      <!-- Google Calendar -->
+      <a id="gcal-link" href="#" class="cal-option" target="_blank" rel="noopener">
+        <div class="cal-icon cal-icon-gcal">
+          <div class="ci-top"></div>
+          <div class="ci-line"></div>
+          <span class="ci-date">26</span>
+        </div>
+        <div class="cal-option-name">Google Calendar</div>
+        <div class="cal-option-desc">Abrir en Google Calendar desde cualquier navegador</div>
+      </a>
+
+      <!-- Download .ics -->
+      <a id="download-ics" href="worldcup_2026_v2.ics" download class="cal-option">
+        <div class="cal-icon cal-icon-dl">
+          <svg viewBox="0 0 24 24">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+        </div>
+        <div class="cal-option-name">Descargar .ics</div>
+        <div class="cal-option-desc">Archivo compatible con cualquier app de calendario</div>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">104</div>
+        <div class="hero-stat-label">Partidos</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">48</div>
+        <div class="hero-stat-label">Selecciones</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">16</div>
+        <div class="hero-stat-label">Sedes</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">11 jun → 19 jul</div>
+        <div class="hero-stat-label">Duración</div>
+      </div>
+    </div>
+
+    <div
+      style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:var(--text-muted);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;animation:float 2s ease-in-out infinite;">
+      Desliza
+    </div>
+    <style>
+      @keyframes float {
+
+        0%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+
+        50% {
+          transform: translateX(-50%) translateY(6px);
+        }
+      }
+    </style>
+  </header>
+
+  <!-- ════════════ ABOUT ════════════ -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">El Mundial más grande de la historia</h2>
+      <p class="section-sub">48 selecciones, 104 partidos, 16 sedes en 3 países. Del 11 de junio al 19 de julio de 2026.
+      </p>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-icon">🏟️</div>
+          <h3>16 Sedes</h3>
+          <p>Estados Unidos, México y Canadá albergan la primera Copa del Mundo con 3 países anfitriones.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🌎</div>
+          <h3>48 Selecciones</h3>
+          <p>Por primera vez 48 equipos compiten por la gloria en el torneo más importante del planeta.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">📅</div>
+          <h3>39 Días</h3>
+          <p>Del 11 de junio al 19 de julio, con partidos en 3 husos horarios distintos.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🏆</div>
+          <h3>104 Partidos</h3>
+          <p>Desde la fase de grupos con 12 grupos hasta la gran final en New York/New Jersey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ VENUES ════════════ -->
+  <section style="padding-top:0;">
+    <div class="container">
+      <h2 class="section-title">Ciudades sede</h2>
+      <p class="section-sub">16 estadios en 3 países reciben la Copa del Mundo 2026.</p>
+      <div class="venues-grid">
+        <div class="venue-card"><strong>Mexico City</strong><span>México</span></div>
+        <div class="venue-card"><strong>Guadalajara (Zapopan)</strong><span>México</span></div>
+        <div class="venue-card"><strong>Monterrey (Guadalupe)</strong><span>México</span></div>
+        <div class="venue-card"><strong>Toronto</strong><span>Canadá</span></div>
+        <div class="venue-card"><strong>Vancouver</strong><span>Canadá</span></div>
+        <div class="venue-card"><strong>Los Angeles (Inglewood)</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>San Francisco Bay Area (Santa Clara)</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>Seattle</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>Houston</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>Dallas (Arlington)</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>Kansas City</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>Atlanta</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>Miami (Miami Gardens)</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>Boston (Foxborough)</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>Philadelphia</strong><span>EE.UU.</span></div>
+        <div class="venue-card"><strong>New York/New Jersey (East Rutherford)</strong><span>EE.UU.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CTA ════════════ -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="section-title">No te pierdas ni un partido</h2>
+      <p class="section-sub">Añade todos los 104 partidos a tu calendario. Compatible con todas las apps.</p>
+
+      <div style="display: flex; justify-content: center;">
+        <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+          style="display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: #0a0e17; padding: 14px 32px; border-radius: 100px; font-weight: 700; font-size: 1.05rem; box-shadow: 0 4px 14px rgba(212, 168, 67, 0.4); transition: transform 0.2s, box-shadow 0.2s; text-decoration: none;"
+          onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(212, 168, 67, 0.6)';"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 14px rgba(212, 168, 67, 0.4)';">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Añadir al Calendario
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer>
+    <div class="container">
+      <p>Datos oficiales de la FIFA.</p>
+      <p style="margin-top:4px;">Copa Mundial de la FIFA 2026 &mdash; Calendario no oficial</p>
+    </div>
+  </footer>
+
+  <!-- ════════════ JAVASCRIPT ════════════ -->
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
