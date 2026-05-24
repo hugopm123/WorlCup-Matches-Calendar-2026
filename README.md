@@ -33,7 +33,6 @@ A medida que avance el mundial y se definan los clasificados a octavos de final,
 
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript.
 - **Backend / Scripting:** Node.js.
-- **Hosting:** Firebase Hosting (`worldcup-calendar-2026.web.app`).
 
 ## Autor y Licencia
 
